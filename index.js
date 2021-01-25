@@ -33,7 +33,6 @@ if(env.name== 'development'){
         }));
 }
 
-app.use(express.urlencoded({extended: false}));
 app.use(express.urlencoded());
 app.use(cookieParser());
 app.use(express.static(env.asset_path));

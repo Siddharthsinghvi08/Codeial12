@@ -32,6 +32,8 @@ if(env.name== 'development'){
         prefix:'/css'
         }));
 }
+
+app.use(express.urlencoded({extended: false}));
 app.use(express.urlencoded());
 app.use(cookieParser());
 app.use(express.static(env.asset_path));

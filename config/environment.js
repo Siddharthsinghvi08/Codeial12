@@ -12,30 +12,7 @@ const accessLogStream = rfs.createStream('access.log', {
 });
 
 
-const development={
-    name:'development',
-    asset_path:'./assets',
-    session_cookie_key:'blahsomething',
-    db:'codeila_development',
-    smtp:{
-    service:'gmail',
-    host:'smtp.gmail.com',
-    port:587,
-    secure:false,
-    auth:{
-        user:'testwalter112',
-        pass:'ASDFGHJKL!@#$%'
-    }
-  },
-  google_client_id:"937111308217-cf94329qmfqdoo4tnim2u0lrgo6ua2ba.apps.googleusercontent.com",
-  google_client_secret:"m8hWYwyKj1ReWxzjMlQKppPh",
-  google_callback_url:"http://localhost:8000/users/auth/google/callback",
-  jwt_secret:'codeial',
-  morgan:{
-    mode:'dev',
-    options: {stream: accessLogStream}
-  }
-}
+
 
 const production={
     name:'production',
